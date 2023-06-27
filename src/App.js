@@ -1,7 +1,4 @@
 import Header from "./components/Header";
-import MemoSection from "./components/MemoSection";
-import DailySection from "./components/DailySection";
-import BriefSection from "./components/BriefSection";
 
 import Main from "./pages/Main";
 import MonthlyCalendar from "./pages/MonthlyCalendar";
@@ -11,7 +8,6 @@ import Enterance from "./pages/Enterance";
 
 import "./App.css";
 import { Route, Routes } from "react-router";
-import { Footer } from "antd/es/layout/layout";
 
 function App() {
   return (
@@ -27,11 +23,7 @@ function App() {
             ></Route>
             <Route path="/summary" element={<Summary />}></Route>
             <Route path="*" element={<NotFound />}></Route>
-            <Route path="/memosection" element={<MemoSection/>} />
-            <Route path="/briefsection" element={<BriefSection/>} />
-            <Route path="/dailysection" element={<DailySection/>} />
           </Route>
-          <Route element={<Footer />} />
         </Routes>
       </div>
     </div>
